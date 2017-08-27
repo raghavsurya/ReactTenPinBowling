@@ -9,12 +9,12 @@ namespace TenPinBowling
     public class BowlingGame
     {
      
-        private int[] rolls = new int[21];
-        private int currentRoll;
+        private readonly int[] _rolls = new int[21];
+        private int _currentRoll;
 
         public void Roll(int pinsHit)
         {
-            rolls[currentRoll++] = pinsHit;
+            _rolls[_currentRoll++] = pinsHit;
         }
 
         public int GetTotalScore()
@@ -25,45 +25,45 @@ namespace TenPinBowling
             {
                 if (IsStrike(roll))
                 {
-                    totalScore += 10 + StrikeBonus(roll);
+                    totalScore += 10 + BonusForStrikeHit(roll);
                     roll++;
                 }
                 else if (IsSpare(roll))
                 {
-                    totalScore += 10 + SpareBonus(roll);
+                    totalScore += 10 + BonusForSpareHit(roll);
                     roll += 2;
                 }
                 else
                 {
-                    totalScore += SummOfBallsInAFrame(roll);
+                    totalScore += SummOfRollsInAFrame(roll);
                     roll += 2;
                 }
             }
             return totalScore;
         }
 
-        private int SummOfBallsInAFrame(int roll)
+        private int SummOfRollsInAFrame(int roll)
         {
-            return rolls[roll] + rolls[roll + 1];
+            return _rolls[roll] + _rolls[roll + 1];
         }
 
-        private int SpareBonus(int roll)
+        private int BonusForSpareHit(int roll)
         {
-            return rolls[roll + 2];
+            return _rolls[roll + 2];
         }
 
-        private int StrikeBonus(int roll)
+        private int BonusForStrikeHit(int roll)
         {
-            return rolls[roll + 1] + rolls[roll + 2];
+            return _rolls[roll + 1] + _rolls[roll + 2];
         }
         private bool IsSpare(int roll)
         {
-            return rolls[roll] + rolls[roll + 1] == 10;
+            return _rolls[roll] + _rolls[roll + 1] == 10;
         }
 
         private bool IsStrike(int roll)
         {
-            return rolls[roll] == 10;
+            return _rolls[roll] == 10;
         }
         static void Main(string[] args)
         {

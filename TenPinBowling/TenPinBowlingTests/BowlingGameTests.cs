@@ -23,7 +23,7 @@ namespace TenPinBowlingTests
             }
         }
         [TestMethod]
-        public void NotEvenASinglePinHitShouldReturnZeroScore()
+        public void NotEven_ASinglePin_HitShould_Return_ZeroScore()
         {
             int rolls = 20;
             int pinsHit = 0;
@@ -34,7 +34,7 @@ namespace TenPinBowlingTests
         }
 
         [TestMethod]
-        public void AllBallsHitOnePinEachShouldReturnScoreOfTwenty()
+        public void AllBalls_HitOnePin_Each_Should_Return_ScoreOfTwenty()
         {
             int rolls = 20;
             int pinsHit = 1;
@@ -45,7 +45,7 @@ namespace TenPinBowlingTests
         }
 
         [TestMethod]
-        public void BowlWithOneSpare()
+        public void BowlWithOneSpare_RestAll_DoesNotHit()
         {
            game.Roll(5);
             game.Roll(5);
@@ -65,7 +65,7 @@ namespace TenPinBowlingTests
         }
 
         [TestMethod]
-        public void AllStrikeWithBonusChancesBothStrike()
+        public void All_Strike_WithBonusChances_BothStrike()
         {
             MultipleRolls(12, 10);
             Assert.AreEqual(300, game.GetTotalScore());
@@ -92,6 +92,33 @@ namespace TenPinBowlingTests
             game.Roll(8);
             game.Roll(1);
             Assert.AreEqual(167, game.GetTotalScore());
+        }
+
+        [TestMethod]
+        public void All_TenFrames_AreSpare_WIthBonusChance_OfFive()
+        {
+            game.Roll(5);
+            game.Roll(5);
+            game.Roll(5);
+            game.Roll(5);
+            game.Roll(5);
+            game.Roll(5);
+            game.Roll(5);
+            game.Roll(5);
+            game.Roll(5);
+            game.Roll(5);
+            game.Roll(5);
+            game.Roll(5);
+            game.Roll(5);
+            game.Roll(5);
+            game.Roll(5);
+            game.Roll(5);
+            game.Roll(5);
+            game.Roll(5);
+            game.Roll(5);
+            game.Roll(5);
+            game.Roll(5);
+            Assert.AreEqual(150, game.GetTotalScore());
         }
     }
 }
