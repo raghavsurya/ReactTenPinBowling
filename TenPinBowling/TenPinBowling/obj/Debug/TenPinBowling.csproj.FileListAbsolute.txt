@@ -1,0 +1,6 @@
+C:\Rag\CtMTechTest\TenPinBowling\TenPinBowling\bin\Debug\TenPinBowling.exe.config
+C:\Rag\CtMTechTest\TenPinBowling\TenPinBowling\bin\Debug\TenPinBowling.exe
+C:\Rag\CtMTechTest\TenPinBowling\TenPinBowling\bin\Debug\TenPinBowling.pdb
+C:\Rag\CtMTechTest\TenPinBowling\TenPinBowling\obj\Debug\TenPinBowling.exe
+C:\Rag\CtMTechTest\TenPinBowling\TenPinBowling\obj\Debug\TenPinBowling.pdb
+C:\Rag\CtMTechTest\TenPinBowling\TenPinBowling\obj\Debug\TenPinBowling.csprojResolveAssemblyReference.cache

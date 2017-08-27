@@ -1,0 +1,8 @@
+C:\Rag\CtMTechTest\TenPinBowling\TenPinBowlingTests\obj\Debug\TenPinBowlingTests.csprojResolveAssemblyReference.cache
+C:\Rag\CtMTechTest\TenPinBowling\TenPinBowlingTests\bin\Debug\TenPinBowlingTests.dll
+C:\Rag\CtMTechTest\TenPinBowling\TenPinBowlingTests\bin\Debug\TenPinBowlingTests.pdb
+C:\Rag\CtMTechTest\TenPinBowling\TenPinBowlingTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Rag\CtMTechTest\TenPinBowling\TenPinBowlingTests\bin\Debug\TenPinBowling.exe
+C:\Rag\CtMTechTest\TenPinBowling\TenPinBowlingTests\bin\Debug\TenPinBowling.pdb
+C:\Rag\CtMTechTest\TenPinBowling\TenPinBowlingTests\obj\Debug\TenPinBowlingTests.dll
+C:\Rag\CtMTechTest\TenPinBowling\TenPinBowlingTests\obj\Debug\TenPinBowlingTests.pdb
