@@ -120,5 +120,31 @@ namespace TenPinBowlingTests
             game.Roll(5);
             Assert.AreEqual(150, game.GetTotalScore());
         }
+        [TestMethod]
+        public void All_TenFrames_HitNinePins_Each()
+        {
+            game.Roll(9);
+            game.Roll(0);
+            game.Roll(9);
+            game.Roll(0);
+            game.Roll(9);
+            game.Roll(0);
+            game.Roll(9);
+            game.Roll(0);
+            game.Roll(9);
+            game.Roll(0);
+            game.Roll(9);
+            game.Roll(0);
+            game.Roll(9);
+            game.Roll(0);
+            game.Roll(9);
+            game.Roll(0);
+            game.Roll(9);
+            game.Roll(0);
+            game.Roll(9);
+            game.Roll(0);
+            
+            Assert.AreEqual(90, game.GetTotalScore());
+        }
     }
 }
